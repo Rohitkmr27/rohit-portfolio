@@ -31,8 +31,8 @@ const socials = [
   {
     icon: <Github size={18} />,
     label: 'GitHub',
-    handle: '@ITC-2023B0131138',
-    href: 'https://github.com/ITC-2023B0131138',
+    handle: '@Rohitkmr27',
+    href: 'https://github.com/Rohitkmr27',
     color: 'slate',
   },
   {
@@ -302,7 +302,7 @@ export default function Contact() {
         >
           <div className="font-display text-2xl font-bold gradient-text mb-2">Rohit Kumar</div>
           <div className="font-mono text-xs text-slate-600 mb-4">
-            BTech IT Student · Cybersecurity · Full Stack Developer
+            Software Development Engineer · Backend · Machine Learning Engineer
           </div>
           <div className="font-mono text-xs text-slate-700">
             © {new Date().getFullYear()} Rohit Kumar. Built with React & ❤️

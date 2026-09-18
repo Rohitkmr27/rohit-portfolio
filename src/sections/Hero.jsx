@@ -185,11 +185,11 @@ export default function Hero() {
               <span className="font-display text-xl sm:text-2xl font-semibold text-cyan-300">
                 <TypeAnimation
                   sequence={[
-                    'Cybersecurity Enthusiast', 2000,
+                    'Software Development Engineer', 2000,
+                    'Backend Developer', 2000,
+                    'Machine Learning Engineer', 2000,
                     'Full Stack Developer', 2000,
-                    'Software Engineer', 2000,
-                    'AI & Trading Bot Builder', 2000,
-                    'BTech IT Student', 2000,
+                    'Cybersecurity & SOC Builder', 2000,
                   ]}
                   wrapper="span"
                   speed={50}
@@ -205,9 +205,9 @@ export default function Hero() {
               transition={{ delay: 0.7 }}
               className="font-body text-slate-400 text-base leading-relaxed max-w-lg"
             >
-              BTech IT student at ABES Engineering College, passionate about building
-              secure systems, full-stack applications, and intelligent automation tools.
-              Turning complex problems into elegant digital solutions.
+              Final-year B.Tech (IT) student at ABES Engineering College with full-stack and applied
+              machine learning experience across Python, FastAPI, React.js, Django, and PostgreSQL.
+              Solved 200+ DSA problems. Seeking Software Development Engineer, Backend, or Machine Learning Engineer roles.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -259,9 +259,9 @@ export default function Hero() {
               className="flex gap-8 mt-4 pt-6 border-t border-white/5"
             >
               {[
-                { value: '10+', label: 'Projects Built' },
-                { value: '100+', label: 'Problems Solved' },
-                { value: '3+', label: 'Certifications' },
+                { value: '4+', label: 'Flagship Projects' },
+                { value: '200+', label: 'DSA Solved' },
+                { value: '99.83%', label: 'IDS Model Accuracy' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="font-display text-2xl font-bold gradient-text-blue">{stat.value}</div>
@@ -312,7 +312,7 @@ export default function Hero() {
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -top-4 -right-4 glass-card px-3 py-2 rounded-xl border border-cyan-400/20"
               >
-                <div className="font-mono text-xs text-cyan-400">⚡ Full Stack</div>
+                <div className="font-mono text-xs text-cyan-400">⚡ SDE & Backend</div>
               </motion.div>
 
               <motion.div
@@ -320,7 +320,7 @@ export default function Hero() {
                 transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -bottom-4 -left-4 glass-card px-3 py-2 rounded-xl border border-purple-500/20"
               >
-                <div className="font-mono text-xs text-purple-400">🔐 Cybersecurity</div>
+                <div className="font-mono text-xs text-purple-400">🤖 Applied AI / ML</div>
               </motion.div>
 
               <motion.div
@@ -328,7 +328,7 @@ export default function Hero() {
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute top-1/2 -right-12 glass-card px-3 py-2 rounded-xl border border-green-500/20"
               >
-                <div className="font-mono text-xs text-green-400">🤖 AI/ML</div>
+                <div className="font-mono text-xs text-green-400">🔐 Cybersecurity & SOC</div>
               </motion.div>
             </div>
           </motion.div>

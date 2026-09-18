@@ -9,12 +9,39 @@ const skillCategories = [
     label: 'Languages',
     icon: '{ }',
     skills: [
-      { name: 'Python', level: 85, color: '#3b82f6' },
-      { name: 'JavaScript', level: 80, color: '#f59e0b' },
-      { name: 'C / C++', level: 75, color: '#8b5cf6' },
-      { name: 'Java', level: 65, color: '#ef4444' },
-      { name: 'SQL', level: 70, color: '#10b981' },
-      { name: 'HTML / CSS', level: 90, color: '#f97316' },
+      { name: 'Python', level: 90, color: '#3b82f6' },
+      { name: 'JavaScript (ES6+)', level: 85, color: '#f59e0b' },
+      { name: 'TypeScript', level: 80, color: '#3178c6' },
+      { name: 'C++', level: 82, color: '#8b5cf6' },
+      { name: 'C', level: 78, color: '#6366f1' },
+      { name: 'SQL', level: 85, color: '#10b981' },
+      { name: 'Java (Basic)', level: 65, color: '#ef4444' },
+    ],
+  },
+  {
+    id: 'backend',
+    label: 'Backend & DB',
+    icon: '⚙',
+    skills: [
+      { name: 'FastAPI', level: 88, color: '#009688' },
+      { name: 'Django / Django ORM', level: 86, color: '#10b981' },
+      { name: 'PostgreSQL & SQLAlchemy', level: 85, color: '#336791' },
+      { name: 'Node.js & Express.js', level: 80, color: '#4ade80' },
+      { name: 'REST APIs & Alembic', level: 85, color: '#f59e0b' },
+      { name: 'Firebase Firestore & SQLite3', level: 82, color: '#f97316' },
+    ],
+  },
+  {
+    id: 'ml_ai',
+    label: 'Machine Learning & AI',
+    icon: '🤖',
+    skills: [
+      { name: 'Scikit-learn & Random Forest', level: 90, color: '#f59e0b' },
+      { name: 'RAG Knowledge Pipeline', level: 85, color: '#00d4ff' },
+      { name: 'Google Gemini API & Prompts', level: 88, color: '#8b5cf6' },
+      { name: 'Qdrant & Vector Search', level: 80, color: '#dc2626' },
+      { name: 'Sentence Transformers', level: 82, color: '#ec4899' },
+      { name: 'Pandas, NumPy & Model Eval', level: 88, color: '#10b981' },
     ],
   },
   {
@@ -22,55 +49,46 @@ const skillCategories = [
     label: 'Frontend',
     icon: '⚡',
     skills: [
-      { name: 'React.js', level: 80, color: '#00d4ff' },
-      { name: 'Tailwind CSS', level: 85, color: '#38bdf8' },
-      { name: 'Bootstrap', level: 75, color: '#7c3aed' },
-      { name: 'Framer Motion', level: 65, color: '#ec4899' },
-    ],
-  },
-  {
-    id: 'backend',
-    label: 'Backend',
-    icon: '⚙',
-    skills: [
-      { name: 'Node.js', level: 75, color: '#4ade80' },
-      { name: 'Express.js', level: 70, color: '#86efac' },
-      { name: 'MongoDB', level: 72, color: '#22c55e' },
-      { name: 'MySQL', level: 68, color: '#3b82f6' },
-      { name: 'REST APIs', level: 78, color: '#f59e0b' },
-    ],
-  },
-  {
-    id: 'security',
-    label: 'Security',
-    icon: '🔐',
-    skills: [
-      { name: 'Network Security', level: 75, color: '#b347ff' },
-      { name: 'Ethical Hacking', level: 65, color: '#a855f7' },
-      { name: 'Cryptography', level: 60, color: '#c084fc' },
-      { name: 'Wireshark', level: 70, color: '#818cf8' },
-      { name: 'Linux / Kali', level: 72, color: '#6366f1' },
+      { name: 'React.js', level: 86, color: '#00d4ff' },
+      { name: 'Tailwind CSS', level: 90, color: '#38bdf8' },
+      { name: 'HTML5 & CSS3', level: 92, color: '#f97316' },
+      { name: 'Bootstrap & Vite', level: 84, color: '#7c3aed' },
+      { name: 'Responsive Design', level: 90, color: '#10b981' },
+      { name: 'REST API Integration', level: 88, color: '#eab308' },
     ],
   },
   {
     id: 'tools',
-    label: 'Tools & Others',
+    label: 'Tools & Platforms',
     icon: '🛠',
     skills: [
-      { name: 'Git / GitHub', level: 82, color: '#f97316' },
-      { name: 'VS Code', level: 90, color: '#3b82f6' },
-      { name: 'Postman', level: 75, color: '#f59e0b' },
-      { name: 'Docker (basics)', level: 50, color: '#38bdf8' },
-      { name: 'Figma', level: 60, color: '#ec4899' },
+      { name: 'Git & GitHub', level: 88, color: '#f97316' },
+      { name: 'VS Code & Postman', level: 90, color: '#3b82f6' },
+      { name: 'Vercel Deployment', level: 85, color: '#a855f7' },
+      { name: 'Firebase Authentication', level: 84, color: '#f59e0b' },
+      { name: 'Android Studio', level: 68, color: '#3ddc84' },
+    ],
+  },
+  {
+    id: 'cs',
+    label: 'CS Fundamentals',
+    icon: '📊',
+    skills: [
+      { name: 'Data Structures & Algorithms', level: 88, color: '#00d4ff' },
+      { name: 'OOP (Object Oriented)', level: 88, color: '#a855f7' },
+      { name: 'DBMS', level: 85, color: '#10b981' },
+      { name: 'Operating Systems', level: 80, color: '#f59e0b' },
+      { name: 'Computer Networks', level: 82, color: '#3b82f6' },
     ],
   },
 ];
 
 const techStack = [
-  'Python', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'MySQL',
-  'Express', 'Tailwind', 'Git', 'Linux', 'Kali Linux', 'Wireshark',
-  'C++', 'Java', 'REST API', 'Bootstrap', 'Postman', 'Figma',
-  'HTML5', 'CSS3', 'Docker', 'VS Code', 'GitHub', 'Cryptography',
+  'Python', 'FastAPI', 'React.js', 'Django', 'PostgreSQL', 'Scikit-learn',
+  'Random Forest', 'Google Gemini API', 'RAG Pipelines', 'Qdrant', 'Sentence Transformers',
+  'JavaScript (ES6+)', 'TypeScript', 'Node.js', 'Express.js', 'SQLAlchemy', 'Alembic',
+  'Tailwind CSS', 'Vite', 'Git', 'GitHub', 'Vercel', 'Postman', 'Firebase Auth',
+  'SQLite3', 'MySQL', 'C++', 'C', 'Pandas', 'NumPy', 'Data Structures & Algorithms',
 ];
 
 function SkillBar({ name, level, color, inView, delay }) {
@@ -167,12 +185,12 @@ export default function Skills() {
             <h3 className="font-display font-semibold text-white mb-6">Core Strengths</h3>
             <div className="grid grid-cols-2 gap-4 flex-1">
               {[
-                { label: 'Problem Solving', value: 85, icon: '🧩' },
-                { label: 'Web Development', value: 80, icon: '🌐' },
-                { label: 'Cybersecurity', value: 72, icon: '🔐' },
-                { label: 'Team Leadership', value: 78, icon: '👥' },
-                { label: 'DSA / Algorithms', value: 70, icon: '📊' },
-                { label: 'System Design', value: 60, icon: '🏗' },
+                { label: 'Problem Solving (200+ DSA)', value: 88, icon: '🧩' },
+                { label: 'Backend Architecture', value: 85, icon: '⚙' },
+                { label: 'Machine Learning & RAG', value: 86, icon: '🤖' },
+                { label: 'Full Stack Development', value: 84, icon: '🌐' },
+                { label: 'Network Security & SOC', value: 82, icon: '🔐' },
+                { label: 'Esports Event Leadership', value: 85, icon: '👥' },
               ].map((item, i) => (
                 <motion.div
                   key={item.label}

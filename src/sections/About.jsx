@@ -5,26 +5,26 @@ import { Code2, Shield, Cpu, Gamepad2, MapPin, GraduationCap, Calendar } from 'l
 const traits = [
   {
     icon: <Code2 size={20} />,
-    title: 'Full Stack Dev',
-    desc: 'Building end-to-end web apps with React, Node.js, MongoDB and modern tooling.',
+    title: 'SDE & Backend Dev',
+    desc: 'Engineering scalable backend services with FastAPI, Django, Node.js, PostgreSQL, and REST APIs.',
     color: 'cyan',
   },
   {
-    icon: <Shield size={20} />,
-    title: 'Cybersecurity',
-    desc: 'Passionate about ethical hacking, network security, and building secure systems.',
+    icon: <Cpu size={20} />,
+    title: 'Applied Machine Learning',
+    desc: 'Building ML & RAG pipelines with Scikit-learn, Random Forest, Gemini API, Qdrant, and Sentence Transformers.',
     color: 'purple',
   },
   {
-    icon: <Cpu size={20} />,
-    title: 'AI & Automation',
-    desc: 'Exploring machine learning, trading bots, and intelligent automation pipelines.',
+    icon: <Shield size={20} />,
+    title: 'Network IDS & SOC',
+    desc: 'Trained 99.83% accuracy IDS on 504K network flows with PostgreSQL alert lifecycle workflows.',
     color: 'green',
   },
   {
     icon: <Gamepad2 size={20} />,
-    title: 'Esports Leader',
-    desc: 'Community Head at OPTIC ESPORTS — organized events and led team coordination.',
+    title: 'Leadership & Events',
+    desc: "Coordinator for Genero'26 (E-Gaming Fest) at ABES & Head of Optic Esports Community.",
     color: 'pink',
   },
 ];
@@ -127,9 +127,10 @@ export default function About() {
                 <div className="pl-4"><span className="text-green-400">"name"</span><span className="text-white">: </span><span className="text-yellow-300">"Rohit Kumar"</span><span className="text-white">,</span></div>
                 <div className="pl-4"><span className="text-green-400">"location"</span><span className="text-white">: </span><span className="text-yellow-300">"Ghaziabad, UP, India"</span><span className="text-white">,</span></div>
                 <div className="pl-4"><span className="text-green-400">"degree"</span><span className="text-white">: </span><span className="text-yellow-300">"B.Tech IT @ ABES"</span><span className="text-white">,</span></div>
-                <div className="pl-4"><span className="text-green-400">"cgpa"</span><span className="text-white">: </span><span className="text-orange-400">6.61</span><span className="text-white">,</span></div>
-                <div className="pl-4"><span className="text-green-400">"passion"</span><span className="text-white">: </span><span className="text-yellow-300">"Cybersecurity & Full Stack"</span><span className="text-white">,</span></div>
-                <div className="pl-4"><span className="text-green-400">"status"</span><span className="text-white">: </span><span className="text-green-400">"Open to Opportunities"</span></div>
+                <div className="pl-4"><span className="text-green-400">"aggregate"</span><span className="text-white">: </span><span className="text-orange-400">"70.12% (till 6th sem)"</span><span className="text-white">,</span></div>
+                <div className="pl-4"><span className="text-green-400">"dsaSolved"</span><span className="text-white">: </span><span className="text-cyan-400">"200+ (LeetCode & CodeChef)"</span><span className="text-white">,</span></div>
+                <div className="pl-4"><span className="text-green-400">"seekingRole"</span><span className="text-white">: </span><span className="text-yellow-300">"SDE / Backend / ML Engineer"</span><span className="text-white">,</span></div>
+                <div className="pl-4"><span className="text-green-400">"status"</span><span className="text-white">: </span><span className="text-green-400">"Available for Opportunities"</span></div>
                 <div><span className="text-white">{'}'}</span></div>
               </div>
             </div>
@@ -139,7 +140,7 @@ export default function About() {
               {[
                 { icon: <MapPin size={14} />, text: 'Ghaziabad, UP' },
                 { icon: <GraduationCap size={14} />, text: 'ABES Engineering College' },
-                { icon: <Calendar size={14} />, text: 'Batch 2023–2027' },
+                { icon: <Calendar size={14} />, text: 'Batch 2023–2027 (Final Year)' },
               ].map((item) => (
                 <div
                   key={item.text}
@@ -154,14 +155,18 @@ export default function About() {
             {/* Bio text */}
             <div className="space-y-4 text-slate-400 font-body text-sm leading-relaxed">
               <p>
-                I'm a final-year B.Tech IT student at ABES Engineering College, Ghaziabad, with a deep
-                passion for cybersecurity and full-stack web development. I love building things that solve
-                real problems — from anime bookstores to expense trackers.
+                I'm a final-year B.Tech (Information Technology) student at ABES Engineering College, Ghaziabad,
+                with full-stack and applied machine learning experience across Python, FastAPI, React.js, Django,
+                and PostgreSQL. I have solved 200+ Data Structures and Algorithms problems across LeetCode (100+) and CodeChef (100+).
               </p>
               <p>
-                Beyond coding, I led the OPTIC ESPORTS COMMUNITY as Community Head, organizing competitive
-                gaming events and managing team coordination. I believe in continuous learning — currently
-                pursuing DSA certifications and exploring AI/ML applications.
+                My projects range from building an enterprise-grade Random Forest Network Intrusion Detection System
+                achieving 99.83% accuracy and 90.80% macro F1 on 504K network flows with FastAPI and a RAG ingestion pipeline,
+                to MockMate AI — an automated mock interview platform leveraging Google Gemini API and LLM scoring pipelines.
+              </p>
+              <p>
+                Beyond coding, I led competitive esports operations as Coordinator for Genero'26 (E-Gaming Fest) at
+                ABES Engineering College and Head of the Optic Esports Community.
               </p>
             </div>
           </motion.div>
